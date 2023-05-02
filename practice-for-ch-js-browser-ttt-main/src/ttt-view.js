@@ -19,10 +19,20 @@ class View {
   }
   
   handleClick(e) {
-    
+    let square = e.target
+    const pos = square.dataset.position
+    let new_arr = []
+    for (let i = 0; i < pos.length; i++) {
+      if (pos[i] !== ",") {
+        new_arr.push(parseInt(pos[i]));
+      }
+    }
+    console.log(new_arr)
+    this.game.playMove(new_arr)
   }
 
   makeMove(square) {
+    
   }
   
   handleGameOver() {
