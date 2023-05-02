@@ -5,7 +5,7 @@ class View {
   }
   
   setupBoard() {
-    // console.log(this.el)
+    console.log(this.el)
     const ul = document.createElement("ul") // This creates a ul as a variable 
     this.el.appendChild(ul)
     for (let i = 0; i < 9; i++) {

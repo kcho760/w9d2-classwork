@@ -16,7 +16,7 @@
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _ttt_node_game_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../ttt_node/game.js */ \"./ttt_node/game.js\");\n// Add your import statements for View and Game here\n// const Game = require(\"../ttt_node/game.js\")\n\nconst View = __webpack_require__(/*! ./ttt-view.js */ \"./src/ttt-view.js\")\n\ndocument.addEventListener(\"DOMContentLoaded\", () => {\n  let g1 = new _ttt_node_game_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"]\n  const figure = document.getElementsByClassName(\"ttt\")\n  let v1 = new View(g1, figure)\n  v1.setupBoard()\n});\n\n//# sourceURL=webpack://practice-for-ch-js-browser-ttt-main/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _ttt_node_game_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../ttt_node/game.js */ \"./ttt_node/game.js\");\n// Add your import statements for View and Game here\n// const Game = require(\"../ttt_node/game.js\")\n\nconst View = __webpack_require__(/*! ./ttt-view.js */ \"./src/ttt-view.js\")\n\ndocument.addEventListener(\"DOMContentLoaded\", () => {\n  let g1 = new _ttt_node_game_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"]\n  const figure = document.querySelector(\".ttt\")\n  let v1 = new View(g1, figure)\n  v1.setupBoard()\n});\n\n//# sourceURL=webpack://practice-for-ch-js-browser-ttt-main/./src/index.js?");
 
 /***/ }),
 
@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _ttt
   \*************************/
 /***/ ((module) => {
 
-eval("class View {\n  constructor(game, el) {\n    this.el = el\n    this.game = game \n  }\n  \n  setupBoard() {\n    // console.log(this.el)\n    const ul = document.createElement(\"ul\") // This creates a ul as a variable \n    this.el.appendChild(ul)\n    for (let i = 0; i < 9; i++) {\n      let li = document.createElement(\"li\")\n      ul.appendChild(li)\n    }\n  }\n  \n  handleClick(e) {\n  }\n\n  makeMove(square) {\n  }\n  \n  handleGameOver() {\n  }\n}\n\nmodule.exports= View\n\n//# sourceURL=webpack://practice-for-ch-js-browser-ttt-main/./src/ttt-view.js?");
+eval("class View {\n  constructor(game, el) {\n    this.el = el\n    this.game = game \n  }\n  \n  setupBoard() {\n    console.log(this.el)\n    const ul = document.createElement(\"ul\") // This creates a ul as a variable \n    this.el.appendChild(ul)\n    for (let i = 0; i < 9; i++) {\n      let li = document.createElement(\"li\")\n      ul.appendChild(li)\n    }\n  }\n  \n  handleClick(e) {\n  }\n\n  makeMove(square) {\n  }\n  \n  handleGameOver() {\n  }\n}\n\nmodule.exports= View\n\n//# sourceURL=webpack://practice-for-ch-js-browser-ttt-main/./src/ttt-view.js?");
 
 /***/ }),
 
