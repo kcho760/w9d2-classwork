@@ -1,1 +1,21 @@
 /* Your code here */
+
+ul {
+    display: flex;
+    flex-wrap: wrap;    
+    width: 600px;
+    height: 600px; 
+    position: fixed;
+}
+ 
+li {
+    list-style: none;
+    width: calc(100% /3);
+    box-sizing: border-box;
+    background-color: grey;
+    border: black 10px solid;
+}
+
+li:hover {
+    background-color: yellow;
+}

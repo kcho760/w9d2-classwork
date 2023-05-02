@@ -7,5 +7,13 @@ document.addEventListener("DOMContentLoaded", () => {
   let g1 = new Game
   const figure = document.querySelector(".ttt")
   let v1 = new View(g1, figure)
-  v1.setupBoard()
+
+  const squares = document.querySelector("li")
+  console.log(squares)
+  
 });
+
+// squares.addEventListener("click", () => {
+//   // handleClick()
+//   // console.log(squares)
+// })
